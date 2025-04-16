@@ -1,2 +1,4 @@
 packages:
   ./toggle-app
+  ./counter-app
+
