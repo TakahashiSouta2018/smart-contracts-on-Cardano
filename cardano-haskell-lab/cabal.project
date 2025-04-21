@@ -2,3 +2,4 @@ packages:
   ./toggle-app
   ./counter-app
   ./game-app
+  ./validator-app
