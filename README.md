@@ -1,45 +1,56 @@
 # 🧪 Smart Contract Lab
 
-**A dual-environment playground for building and testing smart contracts on Cardano using both Haskell (Plutus) and Aiken.** This repository serves as a modular toolkit, a learning environment, and a growing archive of on-chain experiments.
+A dual-environment playground for building and testing smart contracts on Cardano using both **Haskell** (Plutus-style) and **Aiken**. This repo is modular, educational, and continuously growing — an archive of smart contract ideas, testable logic, and on-chain intuition.
 
-## 🧭 Overview
+---
 
-This repo is organized into two core sections:
+## 🧭 Project Structure
 
-- `haskell-contracts/` — Contracts written in Plutus using Haskell, focusing on validation logic, functional design, and off-chain integration.
-- `aiken-contracts/` — Contracts written in Aiken, designed for simplicity, speed, and on-chain determinism.
+| Folder               | Description                                                    |
+|----------------------|----------------------------------------------------------------|
+| `cardano-haskell-lab/` | Contracts and logic written in Haskell (CLI-based, pure logic first) |
+| `cardano-aiken-lab/`   | Contracts written in Aiken, structured for on-chain execution       |
 
-Each script is modular, documented, and meant to serve as both an educational tool and a launchpad for more complex apps.
+Each folder is structured as its own learning lab, with small apps (like validators, toggles, counters, and access checkers) broken into their own directories and tracked independently.
 
 ---
 
 ## 💡 Why Both?
 
-Cardano is unique in its contract architecture — and understanding both the legacy and emerging tools is essential. By maintaining both Haskell and Aiken scripts:
+Cardano’s ecosystem is unique: it supports both traditional **Plutus-style Haskell** contracts and the newer, lightweight **Aiken** DSL.
 
-- We showcase the **differences in syntax and design philosophies**.
-- We reinforce **best practices across the entire toolchain**.
-- We build **cross-compatible intuition** for real-world Cardano dApps.
+By building in both:
 
----
-
-## 🔍 Current Modules
-
-| Feature                 | Haskell           | Aiken            | Status        |
-|------------------------|-------------------|------------------|---------------|
-| Always True Validator  | ✅                | ✅               | Complete      |
-| NFT Mint Policy        | 🔄 In Progress     | ✅               | Partial       |
-| Timelock Script        | ✅                | ✅               | Complete      |
-| Signature Validator    | ✅                | 🔲 Planned        | Mixed         |
-| On-chain Counter       | ✅                | 🔲 Planned        | Haskell only  |
+- 🧠 We sharpen intuition across the toolchain
+- 🛠️ We prototype logic in Haskell, then port to Aiken
+- 🔁 We prepare for RVRS, a custom DSL that will eventually bridge both
 
 ---
 
-## 🧪 How to Use
+## 🔍 Current Modules (from Smart Contract Lab)
 
-- For **Haskell contracts**: follow instructions in `haskell-contracts/README.md`.
-- For **Aiken contracts**:
-  ```bash
-  cd aiken-contracts
-  aiken check
-  aiken test
+| App                    | Haskell | Aiken  | Status         |
+|------------------------|---------|--------|----------------|
+| Role-based Validator   | ✅      | ✅     | Complete       |
+| Toggle Switch          | ✅      | 🔲     | Haskell only   |
+| Counter                | ✅      | 🔲     | Haskell only   |
+| Always True Validator  | 🔲      | 🔲     | Planned        |
+| NFT Mint Policy        | 🔲      | 🔲     | Planned        |
+
+More modules in progress. Each focuses on **one concept at a time**: determinism, access control, validation, state tracking, etc.
+
+---
+
+🧪 In Development
+We're also building:
+
+A shared type library across Haskell and Aiken
+
+RVRS, a new language that will eventually compile into Aiken
+
+CI-ready test setups
+
+A collection of smart contract templates for educational use
+
+Stay modular. Stay testable. Stay sharp.
+– The Lab
