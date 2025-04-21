@@ -1,0 +1,7 @@
+name = "cjrcoding/rolemint"
+version = "0.0.1"
+license = "MIT"
+description = "Role-based mint validator in Aiken"
+
+[application]
+entrypoint = "src/rolemint.val"

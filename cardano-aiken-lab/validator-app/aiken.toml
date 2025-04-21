@@ -1,7 +1,0 @@
-name = "cjrcoding/validator-app"
-version = "0.0.1"
-license = "MIT"
-description = "Aiken validator that checks if a role can mint"
-
-[application]
-entrypoint = "src/rolemint.val"
