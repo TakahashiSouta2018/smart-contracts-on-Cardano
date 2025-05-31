@@ -1,0 +1,18 @@
+name = "cardano-aiken-lab/nft-mint-demo"
+version = "0.0.0"
+compiler = "v1.1.7"
+plutus = "v3"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'cardano-aiken-lab/nft-mint-demo'"
+
+[repository]
+user = "cardano-aiken-lab"
+project = "nft-mint-demo"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "v2.2.0"
+source = "github"
+
+[config]
